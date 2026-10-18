@@ -1,6 +1,6 @@
 {
   "active": true,
-  "hostname": "rdpfree-4",
+  "hostname": "rdpfree-5",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
@@ -13,53 +13,30 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-18T14:06:24Z",
-  "expires_at": "2026-10-18T19:48:24Z",
+  "started_at": "2026-10-18T19:46:20Z",
+  "expires_at": "2026-10-19T01:28:20Z",
   "duration_menit": 342,
-  "run_id": "39134464595",
+  "run_id": "39160250284",
   "run_attempt": "1",
-  "run_number": "4",
-  "run_url": "https://github.com/panzngen05/XyRDP/actions/runs/39134464595",
+  "run_number": "5",
+  "run_url": "https://github.com/panzngen05/XyRDP/actions/runs/39160250284",
   "mode": "bersih+win10",
   "akses": {
+    "mode": "tailscale",
     "tunnel": {
-      "status": "ok",
-      "outside": "tailscale",
+      "port": 3389,
+      "selftest": "ok",
       "host": "100.99.33.76",
       "address": "100.99.33.76:3389",
-      "selftest": "ok",
-      "port": 3389
-    },
-    "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree-4",
-      "magicdns": "rdpfree-4.taila02ca3.ts.net.",
-      "ip": "100.99.33.76",
+      "outside": "tailscale",
       "status": "ok"
     },
-    "mode": "tailscale"
-  },
-  "media": {
-    "audio_output": "rdp_playback_enabled",
-    "microphone": "rdp_capture_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "wallpaper": "xyverse_configured_for_user_logon"
-  },
-  "xydesk": {
-    "host": "ok",
-    "denyts": "ok",
-    "multisession": "ok",
-    "avc444": "ok (120FPS DWMFRAMEINTERVAL=8 + TCPNoDelay=1)",
-    "fontsmoothing": "ok (ClearType profil Default)",
-    "audio_out": "ok (policy fDisableAudio=0, WinStations=0)",
-    "audio_mic": "ok (policy fDisableAudioCapture=0, WinStations=0) - mic HP redirect aktif, Allow di HP",
-    "wallpaper_rdp": "ok (policy fNoRemoteDesktopWallpaper=0) - wallpaper RDP tampil, cek client Experience→Wallpaper ON",
-    "firewall": "tcp3389=True udp3389=True udp4433=True",
-    "services": "ok",
-    "rdp_ready": "127.0.0.1 (handshake OK)",
-    "rdp_probe": "awal=True multi=True audio=True grafis=True clear=True fw=True svc=True",
-    "quic_udp4433": "dibuka di VM (tidak lewat tunnel TCP)",
-    "akses": "(menyusul)",
-    "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
+    "tailscale": {
+      "hostname": "rdpfree-5",
+      "status": "ok",
+      "ip": "100.99.33.76",
+      "magicdns": "rdpfree-5.taila02ca3.ts.net.",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+    }
   }
 }
