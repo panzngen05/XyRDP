@@ -1,65 +1,42 @@
 {
   "active": true,
-  "hostname": "rdpfree-3",
+  "hostname": "rdpfree-4",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
+    "disk_free_gb": 82.9,
     "ram_gb": 16.0,
-    "disk_free_gb": 80.1
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-18T08:26:19Z",
-  "expires_at": "2026-10-18T14:08:19Z",
+  "started_at": "2026-10-18T14:06:24Z",
+  "expires_at": "2026-10-18T19:48:24Z",
   "duration_menit": 342,
-  "run_id": "39111412619",
+  "run_id": "39134464595",
   "run_attempt": "1",
-  "run_number": "3",
-  "run_url": "https://github.com/panzngen05/XyRDP/actions/runs/39111412619",
+  "run_number": "4",
+  "run_url": "https://github.com/panzngen05/XyRDP/actions/runs/39134464595",
   "mode": "bersih+win10",
   "akses": {
     "tunnel": {
-      "address": "100.99.33.76:3389",
-      "outside": "tailscale",
       "status": "ok",
-      "selftest": "ok",
+      "outside": "tailscale",
       "host": "100.99.33.76",
+      "address": "100.99.33.76:3389",
+      "selftest": "ok",
       "port": 3389
     },
-    "mode": "tailscale",
     "tailscale": {
-      "magicdns": "rdpfree-3.taila02ca3.ts.net.",
-      "ip": "100.99.33.76",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
-      "hostname": "rdpfree-3"
-    }
-  },
-  "media": {
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "audio_output": "rdp_playback_enabled",
-    "microphone": "rdp_capture_enabled"
-  },
-  "xydesk": {
-    "host": "ok",
-    "denyts": "ok",
-    "multisession": "ok",
-    "avc444": "ok (120FPS DWMFRAMEINTERVAL=8 + TCPNoDelay=1)",
-    "fontsmoothing": "ok (ClearType profil Default)",
-    "audio_out": "ok (policy fDisableAudio=0, WinStations=0)",
-    "audio_mic": "ok (policy fDisableAudioCapture=0, WinStations=0) - mic HP redirect aktif, Allow di HP",
-    "wallpaper_rdp": "ok (policy fNoRemoteDesktopWallpaper=0) - wallpaper RDP tampil, cek client Experience→Wallpaper ON",
-    "firewall": "tcp3389=True udp3389=True udp4433=True",
-    "services": "ok",
-    "rdp_ready": "127.0.0.1 (handshake OK)",
-    "rdp_probe": "awal=True multi=True audio=True grafis=True clear=True fw=True svc=True",
-    "quic_udp4433": "dibuka di VM (tidak lewat tunnel TCP)",
-    "akses": "(menyusul)",
-    "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
+      "hostname": "rdpfree-4",
+      "magicdns": "rdpfree-4.taila02ca3.ts.net.",
+      "ip": "100.99.33.76",
+      "status": "ok"
+    },
+    "mode": "tailscale"
   }
 }
